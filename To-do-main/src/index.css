@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Caveat:wght@400;700&display=swap');
+
+:root {
+    --bg-primary: #F8F8F8;
+    --bg-surface: #FFFFFF;
+    --border-light: #E0E0E0;
+    --bg-input: #F0F0F0;
+    --text-dark: #333333;
+    --text-medium: #666666;
+    --text-light: #FFFFFF;
+    --text-black: #1A1A1A;
+    --text-link: #1674d7;
+    --shadow-small: rgba(0, 0, 0, 0.05);
+    --shadow-medium: rgba(0, 0, 0, 0.1);
+    --shadow-strong: rgba(0, 0, 0, 0.15);
+    --card-bg-color: #CCEEFF;
+    --card-border-color: #99DDFF;
+    --accent-green: #28a745;
+    --accent-green-dark: #218838;
+    --accent-red: #dc3545;
+    --accent-red-dark: #c82333;
+    --accent-blue: #007bff;
+    --accent-blue-dark: #0056b3;
+    --status-completed-color: #007bff;
+    --status-pending-color: #6f42c1;
+}
+
+html[data-theme='dark'] {
+    --bg-primary: #1A1A1A;
+    --bg-surface: #2C2C2C;
+    --border-light: #444444;
+    --bg-input: #3A3A3A;
+    --text-dark: #E0E0E0;
+    --text-medium: #BBBBBB;
+    --text-light: #1A1A1A;
+    --text-black: #FFFFFF;
+    --text-link: #69C0FF;
+    --shadow-small: rgba(255, 255, 255, 0.05);
+    --shadow-medium: rgba(255, 255, 255, 0.1);
+    --shadow-strong: rgba(255, 255, 255, 0.15);
+    --card-bg-color: #2a6dc6;
+    --card-border-color: #2C4875;
+    --accent-green: #4CAF50;
+    --accent-green-dark: #388E3C;
+    --accent-red: #DC3545;
+    --accent-red-dark: #C82333;
+    --accent-blue: #64B5F6;
+    --accent-blue-dark: #42A5F5;
+    --status-completed-color: #64B5F6;
+    --status-pending-color: #82518b;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg-primary);
+    color: var(--text-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-medium);
+    border-top: 1px solid var(--border-light);
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
